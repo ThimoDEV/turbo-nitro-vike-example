@@ -8,3 +8,4 @@ To start after cloning this repository:
 pnpm install
 ```
 
+vike dev: npm run server:dev
