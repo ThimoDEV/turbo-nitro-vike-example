@@ -34,3 +34,12 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# nitro
+
+*.log*
+.nitro
+.cache
+.output
+.env
+dist

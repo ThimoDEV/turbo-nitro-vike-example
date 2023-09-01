@@ -13,7 +13,8 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    "@nuxtjs/eslint-config-typescript"
   ],
   parser: '@typescript-eslint/parser'
 }

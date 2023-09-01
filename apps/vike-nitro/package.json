@@ -1,12 +1,15 @@
 {
   "scripts": {
-    "dev": "npm run server:dev",
+    "dev": "npm run server:dev && nitropack dev",
     "prod": "npm run lint && npm run build && npm run server:prod",
-    "build": "vite build",
+    "build": "vite build && nitropack build",
     "server": "node --loader ts-node/esm ./server/index.ts",
     "server:dev": "npm run server",
     "server:prod": "cross-env NODE_ENV=production npm run server",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+
+    "prepare": "nitropack prepare",
+    "preview": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@types/compression": "^1.7.2",
@@ -28,6 +31,7 @@
     "react-dom": "^18.2.0",
     "sirv": "^2.0.3",
     "ts-node": "^10.9.1",
+    "nitropack": "latest",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
     "tsconfig": "workspace:*",
