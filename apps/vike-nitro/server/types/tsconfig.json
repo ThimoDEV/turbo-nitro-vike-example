@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "D:/Github repos/Personal/turbo-nitro-vike-example/apps/vike-nitro/server/types/nitro-imports"
+      ]
+    }
+  },
+  "include": [
+    "./nitro.d.ts",
+    "../../**/*",
+    "../**/*"
+  ]
+}

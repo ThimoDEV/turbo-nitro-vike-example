@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "npm run server:dev && nitropack dev",
+    "dev": "nitropack dev",
     "prod": "npm run lint && npm run build && npm run server:prod",
     "build": "vite build && nitropack build",
     "server": "node --loader ts-node/esm ./server/index.ts",
