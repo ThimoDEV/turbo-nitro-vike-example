@@ -4,6 +4,7 @@ import {
   defineLazyEventHandler,
   fromNodeMiddleware,
 } from "h3";
+import { root } from "./server/root";
 
 //https://nitro.unjs.io/config
 export default defineNitroConfig({
@@ -22,8 +23,7 @@ export default defineNitroConfig({
       route: "/__vite",
       handler: defineLazyEventHandler(async () => {
         const viteDevServer = await createServer({
-          base: "/__vite/",
-          appType: "custom",
+          root,
           server: { middlewareMode: true },
         });
 
