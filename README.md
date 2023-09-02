@@ -9,3 +9,9 @@ pnpm install
 ```
 
 vike dev: npm run server:dev
+
+## Used Documentation
+
+- https://nitro.unjs.io/
+- https://vite-plugin-ssr.com/renderPage    (Rendering vps with nitro)
+- https://vitejs.dev/guide/ssr.html#setting-up-the-dev-server 
